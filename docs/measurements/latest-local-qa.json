@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-13",
+  "sourceDigest": "40bdaf96ef64f14021e1c35e9ad6dffbd9787b3ceb40bbfce6d80218a9f823b2",
+  "sourceDigestMethod": "SHA-256 of relative path, NUL, bytes, NUL for sorted src/**, src-tauri/src/**, package.json, package-lock.json, Cargo.toml, Cargo.lock, tauri.conf.json, vite.config.ts",
+  "platform": "macOS 26.3 arm64",
+  "minimumSystemVersion": "12.3",
+  "signing": "ad-hoc, verified; not notarized",
+  "installedFrom": "local release DMG, copied to Applications",
+  "fixture": "new project-generated demo fixture only",
+  "observed": {
+    "scanIndexedEntries": 35,
+    "scanCoverage": "partial: one intentionally skipped symlink",
+    "cargoCandidateLogicalBytes": 900000002,
+    "typedKeyboardConfirmation": true,
+    "systemTrashMovedLogicalBytes": 900000002,
+    "permanentDeletedBytes": 0,
+    "measuredFreeSpaceDeltaBytes": 4222976,
+    "postCleanupEntries": 30,
+    "sourceAndManifestPreserved": true,
+    "duplicatesIndependentCopies": 2,
+    "duplicateGroupCount": 1,
+    "automaticDuplicateSelection": false
+  },
+  "runtimeMetrics": {
+    "frontendReadyMs": 3597,
+    "pagePayloadBytes": 26787,
+    "pageReplies": 13,
+    "progressEvents": 4,
+    "progressPayloadBytes": 1031
+  },
+  "limits": "Single fresh app-process launch with warm OS caches. Current metrics include only this small QA session; these are not the historical 100k/1m benchmark."
+}

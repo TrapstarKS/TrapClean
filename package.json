@@ -1,0 +1,28 @@
+{
+  "name": "trapclean",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 1420",
+    "build": "vite build",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "test:ui": "playwright test",
+    "tauri": "tauri",
+    "format:check": "prettier --check src index.html vite.config.ts tsconfig.json svelte.config.js tests playwright.config.ts"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "2.12.3",
+    "svelte": "5.57.2"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "7.3.1",
+    "@tauri-apps/cli": "2.12.2",
+    "@playwright/test": "1.64.0",
+    "svelte-check": "4.7.6",
+    "typescript": "6.0.3",
+    "vite": "8.3.4",
+    "prettier": "3.9.10",
+    "prettier-plugin-svelte": "4.1.1"
+  }
+}

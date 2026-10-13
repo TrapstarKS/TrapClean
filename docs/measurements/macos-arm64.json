@@ -1,0 +1,2670 @@
+{
+  "date": "2026-10-13",
+  "platform": {
+    "os": "macOS26.3",
+    "architecture": "arm64",
+    "cpu": "AppleM4Pro12cores",
+    "memoryGiB": 24,
+    "filesystem": "APFS",
+    "rust": "1.93.1",
+    "node": "24.13.1"
+  },
+  "testedSourceDigest": {
+    "algorithm": "SHA-256",
+    "value": "adfd1e2a2bddd341faba266939e3f4eace0a0af31bd5e0271a4e0168206509be",
+    "method": "Sorted relative paths and bytes of files under src and src-tauri/src plus Cargo.toml/Cargo.lock/tauri.conf.json/package.json/package-lock.json; path NUL bytes NUL for each file."
+  },
+  "scannerBenchmarks": [
+    {
+      "cancelMs": 2.546958,
+      "cancelStatus": "cancelled",
+      "databaseBytes": 67993600,
+      "entriesPerSecond": 8370.580225852837,
+      "fixtureFiles": 100000,
+      "indexedEntries": 100101,
+      "ipcSummaryBytes": 14660,
+      "peakRssBytes": 22102016,
+      "progressEvents": 49,
+      "rootPageItems": 50,
+      "rootPageMs": 0.18654199999999999,
+      "seconds": 11.958669208,
+      "status": "complete"
+    },
+    {
+      "cancelMs": 1.161083,
+      "cancelStatus": "cancelled",
+      "databaseBytes": 683130880,
+      "entriesPerSecond": 5198.336922484483,
+      "fixtureFiles": 1000000,
+      "indexedEntries": 1001001,
+      "ipcSummaryBytes": 215039,
+      "peakRssBytes": 30883840,
+      "progressEvents": 711,
+      "rootPageItems": 50,
+      "rootPageMs": 1.000708,
+      "seconds": 192.561777916,
+      "status": "complete"
+    }
+  ],
+  "nativeApp": {
+    "macos-final-scan100k": {
+      "method": "sum ps resident memory and reported CPU for all processes with matching resource and jetsam coalition IDs; RSS includes shared mappings and excludes compressed pages; ps CPU is smoothed, not instantaneous",
+      "peakRssBytes": 211910656,
+      "averagePsCpuPercent": 27.06470588235294,
+      "samples": [
+        {
+          "seconds": 0.06773645803332329,
+          "rssBytes": 104497152,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 53542912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 10764288,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6291456,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 9289728,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6488064,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 18120704,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 0.6570448752027005,
+          "rssBytes": 104333312,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 53297152,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 10780672,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6307840,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 9306112,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6504448,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 18137088,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 1.2869159581605345,
+          "rssBytes": 104087552,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 53297152,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 10551296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6307840,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 9306112,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6488064,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 18137088,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 1.8675604581367224,
+          "rssBytes": 104349696,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 53542912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 10551296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6307840,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 9306112,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6504448,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 18137088,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 2.432210292201489,
+          "rssBytes": 104562688,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 53542912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 10764288,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6307840,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 9306112,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6504448,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 18137088,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 2.985365833155811,
+          "rssBytes": 104562688,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 53542912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 10764288,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6307840,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 9306112,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6504448,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 18137088,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 3.5407171251717955,
+          "rssBytes": 104562688,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 53542912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 10764288,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6307840,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 9306112,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6504448,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 18137088,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 4.119517667219043,
+          "rssBytes": 104562688,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 53542912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 10764288,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6307840,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 9306112,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6504448,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 18137088,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 4.674741000169888,
+          "rssBytes": 104562688,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 53542912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 10764288,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6307840,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 9306112,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6504448,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 18137088,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 5.232044125208631,
+          "rssBytes": 104579072,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 53542912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 10780672,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6307840,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 9306112,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6504448,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 18137088,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 5.790418250020593,
+          "rssBytes": 104136704,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 53248000,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 10747904,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6275072,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 9273344,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6488064,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 18104320,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 6.405468333046883,
+          "rssBytes": 103907328,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 53166080,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 10551296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6291456,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 9289728,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6504448,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 18104320,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 6.961836667032912,
+          "rssBytes": 103546880,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 53149696,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 10354688,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6291456,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 9289728,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6504448,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 17956864,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 7.51975958305411,
+          "rssBytes": 103546880,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 53149696,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 10354688,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6291456,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 9289728,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6504448,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 17956864,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 8.07438095821999,
+          "rssBytes": 103809024,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 53411840,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 10354688,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6291456,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 9289728,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6504448,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 17956864,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 8.631687083048746,
+          "rssBytes": 104005632,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 53411840,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 10551296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6291456,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 9289728,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6504448,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 17956864,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 9.198454250115901,
+          "rssBytes": 104005632,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 53411840,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 10551296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6291456,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 9289728,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6504448,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 17956864,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 9.773882708046585,
+          "rssBytes": 103890944,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 53379072,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 10534912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6275072,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 9273344,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6488064,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 17940480,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 10.338190875016153,
+          "rssBytes": 104005632,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 53411840,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 10551296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6291456,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 9289728,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6504448,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 17956864,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 10.89787591714412,
+          "rssBytes": 100040704,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 51150848,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 10125312,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6193152,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 8749056,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6488064,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 17334272,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 11.473034708062187,
+          "rssBytes": 100057088,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 51150848,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 10141696,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6193152,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 8749056,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6488064,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 17334272,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 12.041867542080581,
+          "rssBytes": 175915008,
+          "psCpuPercent": 38.4,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 70189056,
+              "psCpuPercent": 26.2
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 22102016,
+              "psCpuPercent": 3.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 8241152,
+              "psCpuPercent": 0.1
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 47824896,
+              "psCpuPercent": 8.7
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6488064,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 21069824,
+              "psCpuPercent": 0.4
+            }
+          ]
+        },
+        {
+          "seconds": 12.593044042121619,
+          "rssBytes": 194953216,
+          "psCpuPercent": 70.7,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 74268672,
+              "psCpuPercent": 42.7
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 23740416,
+              "psCpuPercent": 1.7
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 8241152,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 60997632,
+              "psCpuPercent": 26.2
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 21250048,
+              "psCpuPercent": 0.1
+            }
+          ]
+        },
+        {
+          "seconds": 13.150538167217746,
+          "rssBytes": 199245824,
+          "psCpuPercent": 52.3,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 78036992,
+              "psCpuPercent": 47.9
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 23789568,
+              "psCpuPercent": 0.7
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 8273920,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 61227008,
+              "psCpuPercent": 3.7
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 21463040,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 13.789064042037353,
+          "rssBytes": 210239488,
+          "psCpuPercent": 48.6,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 82067456,
+              "psCpuPercent": 41.1
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 23003136,
+              "psCpuPercent": 2.1
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 8208384,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 65896448,
+              "psCpuPercent": 5.3
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 24608768,
+              "psCpuPercent": 0.1
+            }
+          ]
+        },
+        {
+          "seconds": 14.350642167031765,
+          "rssBytes": 204292096,
+          "psCpuPercent": 44.4,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 82395136,
+              "psCpuPercent": 41.6
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 23019520,
+              "psCpuPercent": 0.9
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 8208384,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 59572224,
+              "psCpuPercent": 1.4
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 24641536,
+              "psCpuPercent": 0.5
+            }
+          ]
+        },
+        {
+          "seconds": 14.904064167058095,
+          "rssBytes": 211910656,
+          "psCpuPercent": 54.1,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 82722816,
+              "psCpuPercent": 49.4
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 23838720,
+              "psCpuPercent": 2.3
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 8208384,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 66043904,
+              "psCpuPercent": 2.4
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 24641536,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 15.477314708055928,
+          "rssBytes": 201113600,
+          "psCpuPercent": 52.8,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 79364096,
+              "psCpuPercent": 50.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 23658496,
+              "psCpuPercent": 1.6
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6275072,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 63520768,
+              "psCpuPercent": 1.2
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 21839872,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 16.035629083169624,
+          "rssBytes": 193134592,
+          "psCpuPercent": 56.3,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 78135296,
+              "psCpuPercent": 50.4
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 23330816,
+              "psCpuPercent": 2.2
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6242304,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 57589760,
+              "psCpuPercent": 3.7
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 21381120,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 16.594572250032797,
+          "rssBytes": 179224576,
+          "psCpuPercent": 50.699999999999996,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 75513856,
+              "psCpuPercent": 48.8
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 22839296,
+              "psCpuPercent": 0.9
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6193152,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 49643520,
+              "psCpuPercent": 1.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 18579456,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 17.146921083098277,
+          "rssBytes": 188973056,
+          "psCpuPercent": 59.9,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 75956224,
+              "psCpuPercent": 50.3
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 23494656,
+              "psCpuPercent": 3.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6193152,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 58294272,
+              "psCpuPercent": 6.6
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 18579456,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 17.69685316714458,
+          "rssBytes": 188645376,
+          "psCpuPercent": 52.5,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 75759616,
+              "psCpuPercent": 49.9
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 23560192,
+              "psCpuPercent": 0.9
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6193152,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 58114048,
+              "psCpuPercent": 1.7
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 18563072,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 18.258337000152096,
+          "rssBytes": 186892288,
+          "psCpuPercent": 51.3,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 75661312,
+              "psCpuPercent": 50.3
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 23592960,
+              "psCpuPercent": 0.3
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6193152,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 56557568,
+              "psCpuPercent": 0.7
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 18432000,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 18.822027708170936,
+          "rssBytes": 187613184,
+          "psCpuPercent": 51.4,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 76120064,
+              "psCpuPercent": 49.5
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 22839296,
+              "psCpuPercent": 0.5
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6193152,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 57245696,
+              "psCpuPercent": 1.3
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 18759680,
+              "psCpuPercent": 0.1
+            }
+          ]
+        },
+        {
+          "seconds": 19.421539458213374,
+          "rssBytes": 165904384,
+          "psCpuPercent": 42.5,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 74366976,
+              "psCpuPercent": 40.6
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 19808256,
+              "psCpuPercent": 0.7
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6193152,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 39960576,
+              "psCpuPercent": 1.2
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 19120128,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 19.994403958087787,
+          "rssBytes": 179617792,
+          "psCpuPercent": 47.3,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 76087296,
+              "psCpuPercent": 43.3
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 21741568,
+              "psCpuPercent": 1.5
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6193152,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 50020352,
+              "psCpuPercent": 2.5
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 19120128,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 20.564305667066947,
+          "rssBytes": 173031424,
+          "psCpuPercent": 45.9,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 75677696,
+              "psCpuPercent": 44.9
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 21250048,
+              "psCpuPercent": 0.3
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6193152,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 44335104,
+              "psCpuPercent": 0.7
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 19120128,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 21.12108916719444,
+          "rssBytes": 186695680,
+          "psCpuPercent": 50.800000000000004,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 76234752,
+              "psCpuPercent": 46.7
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 21938176,
+              "psCpuPercent": 0.8
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6193152,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 56754176,
+              "psCpuPercent": 3.3
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 19120128,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 21.714015333214775,
+          "rssBytes": 178831360,
+          "psCpuPercent": 38.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 75497472,
+              "psCpuPercent": 35.5
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 21544960,
+              "psCpuPercent": 0.9
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6193152,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 50937856,
+              "psCpuPercent": 1.6
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 18202624,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 22.5355876670219,
+          "rssBytes": 176455680,
+          "psCpuPercent": 37.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 75284480,
+              "psCpuPercent": 31.8
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 21544960,
+              "psCpuPercent": 1.7
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6193152,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 49643520,
+              "psCpuPercent": 3.5
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 17334272,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 23.088451333111152,
+          "rssBytes": 191922176,
+          "psCpuPercent": 56.099999999999994,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 78512128,
+              "psCpuPercent": 44.3
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 26673152,
+              "psCpuPercent": 3.3
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 8159232,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 50839552,
+              "psCpuPercent": 8.3
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 21282816,
+              "psCpuPercent": 0.2
+            }
+          ]
+        },
+        {
+          "seconds": 23.644927417160943,
+          "rssBytes": 191741952,
+          "psCpuPercent": 50.699999999999996,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 78479360,
+              "psCpuPercent": 49.3
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 26820608,
+              "psCpuPercent": 0.3
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 8175616,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 50528256,
+              "psCpuPercent": 1.1
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 21282816,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 24.319100583205,
+          "rssBytes": 192380928,
+          "psCpuPercent": 34.9,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 78561280,
+              "psCpuPercent": 33.5
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 27230208,
+              "psCpuPercent": 0.5
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 8208384,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 50642944,
+              "psCpuPercent": 0.9
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 21282816,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 24.933363292133436,
+          "rssBytes": 184680448,
+          "psCpuPercent": 39.9,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 79593472,
+              "psCpuPercent": 38.1
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 25116672,
+              "psCpuPercent": 0.3
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 8175616,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 43024384,
+              "psCpuPercent": 0.6
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6455296,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 22315008,
+              "psCpuPercent": 0.9
+            }
+          ]
+        },
+        {
+          "seconds": 25.541516875149682,
+          "rssBytes": 174047232,
+          "psCpuPercent": 42.1,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 79118336,
+              "psCpuPercent": 40.6
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 22888448,
+              "psCpuPercent": 0.1
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6488064,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 35028992,
+              "psCpuPercent": 0.5
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6422528,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 24100864,
+              "psCpuPercent": 0.9
+            }
+          ]
+        },
+        {
+          "seconds": 26.130631792126223,
+          "rssBytes": 168345600,
+          "psCpuPercent": 44.800000000000004,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 81379328,
+              "psCpuPercent": 42.6
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 22577152,
+              "psCpuPercent": 0.2
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6144000,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 27312128,
+              "psCpuPercent": 1.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6422528,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 24510464,
+              "psCpuPercent": 1.0
+            }
+          ]
+        },
+        {
+          "seconds": 26.7140055000782,
+          "rssBytes": 167870464,
+          "psCpuPercent": 41.9,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 81608704,
+              "psCpuPercent": 37.8
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 24707072,
+              "psCpuPercent": 2.6
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6094848,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 28721152,
+              "psCpuPercent": 1.5
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 20299776,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 27.30981933302246,
+          "rssBytes": 167804928,
+          "psCpuPercent": 44.9,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 81510400,
+              "psCpuPercent": 42.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 24313856,
+              "psCpuPercent": 1.3
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6094848,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 29278208,
+              "psCpuPercent": 1.6
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 20168704,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 28.503597042057663,
+          "rssBytes": 157646848,
+          "psCpuPercent": 34.5,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 76660736,
+              "psCpuPercent": 32.5
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 24330240,
+              "psCpuPercent": 0.9
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 6012928,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 28180480,
+              "psCpuPercent": 1.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 16023552,
+              "psCpuPercent": 0.1
+            }
+          ]
+        },
+        {
+          "seconds": 29.689593417104334,
+          "rssBytes": 147750912,
+          "psCpuPercent": 16.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 73007104,
+              "psCpuPercent": 13.7
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 20742144,
+              "psCpuPercent": 1.6
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 5996544,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 25411584,
+              "psCpuPercent": 0.7
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 16154624,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 31.766692583216354,
+          "rssBytes": 128778240,
+          "psCpuPercent": 29.6,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 59981824,
+              "psCpuPercent": 27.1
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 19939328,
+              "psCpuPercent": 0.9
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 5783552,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 22560768,
+              "psCpuPercent": 1.6
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 14073856,
+              "psCpuPercent": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    "macos-final-postscan-idle": {
+      "method": "sum ps resident memory and reported CPU for all processes with matching resource and jetsam coalition IDs; RSS includes shared mappings and excludes compressed pages; ps CPU is smoothed, not instantaneous",
+      "peakRssBytes": 77070336,
+      "averagePsCpuPercent": 0.0,
+      "samples": [
+        {
+          "seconds": 0.05338258296251297,
+          "rssBytes": 76922880,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 37683200,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 9961472,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 5767168,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 4898816,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 12173312,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 0.6081741249654442,
+          "rssBytes": 76939264,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 37699584,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 9961472,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 5767168,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 4898816,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 12173312,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 1.214028166839853,
+          "rssBytes": 76972032,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 37699584,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 9994240,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 5767168,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 4898816,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 12173312,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 1.7872089580632746,
+          "rssBytes": 76677120,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 37453824,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 9945088,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 5767168,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 4898816,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 12173312,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 2.3483211249113083,
+          "rssBytes": 76513280,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 37453824,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 9781248,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 5767168,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 4898816,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 12173312,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 2.9062153750564903,
+          "rssBytes": 76513280,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 37453824,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 9781248,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 5767168,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 4898816,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 12173312,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 3.477859624894336,
+          "rssBytes": 76775424,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 37715968,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 9781248,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 5767168,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 4898816,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 12173312,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 4.04081887495704,
+          "rssBytes": 77070336,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 37814272,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 9977856,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 5767168,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 4898816,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 12173312,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 4.646094124997035,
+          "rssBytes": 77070336,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 37814272,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 9977856,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 5767168,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 4898816,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 12173312,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 5.269957792013884,
+          "rssBytes": 77070336,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 37814272,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 9977856,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 5767168,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 4898816,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 12173312,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 5.845529041951522,
+          "rssBytes": 74547200,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 35389440,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 9945088,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 5750784,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 4849664,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 12173312,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 6.453484582947567,
+          "rssBytes": 74498048,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 35373056,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 9945088,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 5750784,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 4849664,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 12140544,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 7.117344582919031,
+          "rssBytes": 74350592,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 35241984,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 9928704,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 5750784,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 4849664,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 12140544,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 7.679217000026256,
+          "rssBytes": 74350592,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 35241984,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 9928704,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 5750784,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 4849664,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 12140544,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 8.239083457970992,
+          "rssBytes": 74350592,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 35241984,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 9928704,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 5750784,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 4849664,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 12140544,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 8.797476707957685,
+          "rssBytes": 74350592,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 35241984,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 9928704,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 5750784,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 4849664,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 12140544,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 9.409280708059669,
+          "rssBytes": 74350592,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 35241984,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 9928704,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 5750784,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 4849664,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 12140544,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 9.974139292025939,
+          "rssBytes": 74350592,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 35225600,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 9945088,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 5750784,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 4849664,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 12140544,
+              "psCpuPercent": 0.0
+            }
+          ]
+        },
+        {
+          "seconds": 10.53719404200092,
+          "rssBytes": 74350592,
+          "psCpuPercent": 0.0,
+          "processes": [
+            {
+              "name": "trapclean",
+              "rssBytes": 35225600,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.GPU",
+              "rssBytes": 9945088,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.Networking",
+              "rssBytes": 5750784,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.WebKit.WebContent",
+              "rssBytes": 4849664,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "com.apple.audio.SandboxHelper",
+              "rssBytes": 6438912,
+              "psCpuPercent": 0.0
+            },
+            {
+              "name": "ThemeWidgetControlViewService",
+              "rssBytes": 12140544,
+              "psCpuPercent": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    "startupReadyMs": 2615,
+    "cancelObservedMs": 1234,
+    "settingsDuringScanObservedMs": 1871,
+    "completed100kScan": {
+      "entries": 100101,
+      "secondsFromIndexTimestamps": 18,
+      "timestampResolutionSeconds": 1,
+      "fixtureFileBytes": 22,
+      "progressEvents": 76,
+      "progressJsonBytes": 20410,
+      "pageReplies": 20,
+      "pageJsonBytes": 552368,
+      "counterMethod": "Difference between snapshots before and after completed scan; JSON progress and page replies only, excludes command arguments, other replies, completion event and transport framing."
+    }
+  },
+  "sourceContext": "Measured pre-commit local source identified by testedSourceDigest; not final-delivery-source performance verification."
+}

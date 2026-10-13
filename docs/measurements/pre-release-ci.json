@@ -1,0 +1,169 @@
+{
+  "date": "2026-10-13",
+  "kind": "native pre-release validation of frozen production source; delivery artifact receipts are attached to the final release",
+  "sourceSha": "3088e174f7fd840bb093e6990e3c010ec0fae37d",
+  "sourceDigest": "40bdaf96ef64f14021e1c35e9ad6dffbd9787b3ceb40bbfce6d80218a9f823b2",
+  "sourceDigestMethod": "SHA-256 of relative path, NUL, bytes, NUL for sorted src/**, src-tauri/src/**, package.json, package-lock.json, Cargo.toml, Cargo.lock, tauri.conf.json, vite.config.ts",
+  "checksUrl": "https://github.com/TrapstarKS/TrapClean-validation-public-20261013/actions/runs/38452644506",
+  "installersUrl": "https://github.com/TrapstarKS/TrapClean-validation-public-20261013/actions/runs/38452646418",
+  "checks": {
+    "macos-arm64": {
+      "rustTestsPassed": 51,
+      "chromiumUiTestsPassed": 13,
+      "nativeSyntheticVault": "passed"
+    },
+    "windows-x64": {
+      "rustTestsPassed": 51,
+      "chromiumUiTestsPassed": 13,
+      "nativeSyntheticVault": "passed"
+    },
+    "macos-x64": {
+      "rustTestsPassed": 51,
+      "frontendBuildAndTypecheck": "passed",
+      "interactiveUi": "not exercised"
+    }
+  },
+  "runtime": [
+    {
+      "schemaVersion": 1,
+      "sourceSha": "3088e174f7fd840bb093e6990e3c010ec0fae37d",
+      "platform": "macos-arm64",
+      "startedAt": "2026-10-13T19:17:30.986489+00:00",
+      "finishedAt": "2026-10-13T19:17:42.577948+00:00",
+      "outcome": "passed",
+      "installer": {
+        "name": "TrapClean_0.1.0_macos-arm64.dmg",
+        "sha256": "12628f9b09a64fbbc04c1741ce68504a378c9174a48bd3ace6272df8220ac06b"
+      },
+      "installation": {
+        "status": "copied-to-unique-temporary-install",
+        "applicationsShortcut": true,
+        "bundleArchitectures": ["arm64"],
+        "signature": "ad-hoc verified; not notarized"
+      },
+      "launch": {
+        "status": "native-frontend-ready-and-alive",
+        "frontendReadyMs": 4404,
+        "survivedFiveSeconds": true,
+        "exitCode": null
+      },
+      "windowInspected": false,
+      "screenshotCaptured": false,
+      "interactiveUiExercised": false,
+      "cleanup": {
+        "process": "terminated only the launched Popen process",
+        "mount": "detached only the owned mount",
+        "temporaryInstall": "removed only the uniquely created temporary directory and copied app",
+        "appData": "profile data is never deleted; fresh runtime data remains on the ephemeral runner"
+      },
+      "limitations": [
+        "Checks a copied native bundle and an app-owned WebView-frame readiness acknowledgment. No scanning, provider request, cleanup, keyboard, visible-window inspection or installer drag/drop is exercised. Ad-hoc signing is not notarization or Gatekeeper approval."
+      ],
+      "error": null
+    },
+    {
+      "schemaVersion": 1,
+      "sourceSha": "3088e174f7fd840bb093e6990e3c010ec0fae37d",
+      "platform": "macos-x64",
+      "startedAt": "2026-10-13T19:21:45.113666+00:00",
+      "finishedAt": "2026-10-13T19:22:00.599338+00:00",
+      "outcome": "passed",
+      "installer": {
+        "name": "TrapClean_0.1.0_macos-x64.dmg",
+        "sha256": "86c3bbf2c3fbcfd96980712c744825135023f8c22aab86d3b7448c1bdceac2d9"
+      },
+      "installation": {
+        "status": "copied-to-unique-temporary-install",
+        "applicationsShortcut": true,
+        "bundleArchitectures": ["x86_64"],
+        "signature": "ad-hoc verified; not notarized"
+      },
+      "launch": {
+        "status": "native-frontend-ready-and-alive",
+        "frontendReadyMs": 3961,
+        "survivedFiveSeconds": true,
+        "exitCode": null
+      },
+      "windowInspected": false,
+      "screenshotCaptured": false,
+      "interactiveUiExercised": false,
+      "cleanup": {
+        "process": "terminated only the launched Popen process",
+        "mount": "detached only the owned mount",
+        "temporaryInstall": "removed only the uniquely created temporary directory and copied app",
+        "appData": "profile data is never deleted; fresh runtime data remains on the ephemeral runner"
+      },
+      "limitations": [
+        "Checks a copied native bundle and an app-owned WebView-frame readiness acknowledgment. No scanning, provider request, cleanup, keyboard, visible-window inspection or installer drag/drop is exercised. Ad-hoc signing is not notarization or Gatekeeper approval."
+      ],
+      "error": null
+    },
+    {
+      "schemaVersion": 1,
+      "sourceSha": "3088e174f7fd840bb093e6990e3c010ec0fae37d",
+      "platform": "windows-x64",
+      "startedAt": "2026-10-13T19:19:57.1898207Z",
+      "finishedAt": "2026-10-13T19:20:18.9817545Z",
+      "outcome": "passed",
+      "installer": {
+        "name": "TrapClean_0.1.0_windows-x64.exe",
+        "sha256": "7ae7d4a2796504d93c654d1f75267a1405a24250d2129a092eb05d41a84bcb6f",
+        "exitCode": 0
+      },
+      "installation": {
+        "status": "installed",
+        "executableFound": true
+      },
+      "launch": {
+        "status": "native-frontend-ready-and-alive",
+        "readinessAcknowledged": true,
+        "frontendReadyMs": 11088,
+        "survivedFiveSeconds": true,
+        "exitCode": null
+      },
+      "window": {
+        "status": "visible",
+        "expectedTitle": "TrapClean",
+        "observedTitle": "TrapClean",
+        "visibleFlag": true,
+        "interactiveSession": true
+      },
+      "screenshot": {
+        "status": "captured-unreviewed",
+        "file": "runtime-smoke-windows-x64.png",
+        "method": "user32 PrintWindow into System.Drawing bitmap",
+        "visuallyReviewed": false,
+        "message": "Real launched-window capture. Inspect the image before claiming that WebView content rendered correctly; PrintWindow may capture a blank or incomplete accelerated surface."
+      },
+      "cleanup": {
+        "process": "closed only the launched app process",
+        "installation": "left in uniquely owned temporary directory; ephemeral CI runner discards it",
+        "appData": "new runtime data remains on the ephemeral runner; profile data is never deleted"
+      },
+      "interactiveUiExercised": false,
+      "limitations": [
+        "This checks installation, app-owned frontend readiness, process survival and an optional native window. Scanning, providers, cleanup, keyboard and installer wizard interactions are not exercised."
+      ],
+      "error": null
+    }
+  ],
+  "installers": [
+    {
+      "name": "TrapClean_0.1.0_macos-arm64.dmg",
+      "bytes": 4651906,
+      "sha256": "12628f9b09a64fbbc04c1741ce68504a378c9174a48bd3ace6272df8220ac06b"
+    },
+    {
+      "name": "TrapClean_0.1.0_macos-x64.dmg",
+      "bytes": 5031687,
+      "sha256": "86c3bbf2c3fbcfd96980712c744825135023f8c22aab86d3b7448c1bdceac2d9"
+    },
+    {
+      "name": "TrapClean_0.1.0_windows-x64.exe",
+      "bytes": 3867786,
+      "sha256": "7ae7d4a2796504d93c654d1f75267a1405a24250d2129a092eb05d41a84bcb6f"
+    }
+  ],
+  "windowsCaptureVisuallyReviewed": true,
+  "windowsInteractiveUiExercised": false
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "TrapClean",
+  "version": "0.1.0",
+  "identifier": "io.github.trapstarks.trapclean",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [{"label":"main", "title":"TrapClean", "width":1180, "height":790, "minWidth":640, "minHeight":480}],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src ipc: http://ipc.localhost; object-src 'none'; frame-src 'none'; base-uri 'self'",
+      "capabilities": [{"identifier":"main","windows":["main"],"permissions":["core:default"]}]
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["dmg", "nsis"],
+    "category": "Utility",
+    "shortDescription": "Understand your storage. Clean with evidence.",
+    "longDescription": "Local storage analysis, evidence-based cleanup and optional AI recommendations. You review every cleanup plan.",
+    "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns", "icons/icon.ico"],
+    "macOS": {"minimumSystemVersion":"12.3", "signingIdentity":"-"},
+    "windows": {
+      "webviewInstallMode": {"type":"downloadBootstrapper", "silent":true},
+      "nsis": {"installMode":"currentUser", "displayLanguageSelector":false}
+    }
+  }
+}

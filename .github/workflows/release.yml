@@ -1,0 +1,99 @@
+name: Installers
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-15
+            target: aarch64-apple-darwin
+            bundle: dmg
+            label: macos-arm64
+          - os: macos-15-intel
+            target: x86_64-apple-darwin
+            bundle: dmg
+            label: macos-x64
+          - os: windows-2022
+            target: x86_64-pc-windows-msvc
+            bundle: nsis
+            label: windows-x64
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: src-tauri
+          key: ${{ matrix.target }}
+      - run: npm ci
+      - run: npm run check
+      - run: npm run build
+      - run: cargo test --manifest-path src-tauri/Cargo.toml --locked
+      - run: npm run tauri -- build --target ${{ matrix.target }} --bundles ${{ matrix.bundle }}
+      - name: Record SHA and checksums
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path release-assets | Out-Null
+          $target = '${{ matrix.target }}'
+          $label = '${{ matrix.label }}'
+          $files = Get-ChildItem "src-tauri/target/$target/release/bundle" -Recurse -File | Where-Object { $_.Extension -in '.dmg','.exe' }
+          if (!$files) { throw 'Installer missing' }
+          foreach ($file in $files) {
+            $name = "TrapClean_0.1.0_$label$($file.Extension)"
+            Copy-Item $file.FullName "release-assets/$name"
+            $hash = (Get-FileHash "release-assets/$name" -Algorithm SHA256).Hash.ToLower()
+            "$hash  $name" | Out-File "release-assets/SHA256SUMS-$label.txt" -Encoding ascii
+          }
+          '${{ github.sha }}' | Out-File "release-assets/SOURCE-$label.txt" -Encoding ascii
+      - name: macOS install and frontend startup smoke
+        if: runner.os == 'macOS'
+        shell: bash
+        run: |
+          case '${{ matrix.target }}' in
+            aarch64-apple-darwin) smoke_arch=arm64 ;;
+            x86_64-apple-darwin) smoke_arch=x86_64 ;;
+            *) exit 1 ;;
+          esac
+          python3 scripts/macos-runtime-smoke.py --installer 'release-assets/TrapClean_0.1.0_${{ matrix.label }}.dmg' --source-sha '${{ github.sha }}' --expected-arch "$smoke_arch" --output-dir release-assets
+      - name: Windows install and startup smoke
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: ./scripts/windows-runtime-smoke.ps1 -Installer release-assets/TrapClean_0.1.0_windows-x64.exe -SourceSha '${{ github.sha }}' -OutputDirectory release-assets
+      - uses: actions/upload-artifact@v4
+        with:
+          name: installers-${{ matrix.label }}-${{ github.sha }}
+          path: release-assets/
+          retention-days: 30
+          if-no-files-found: error
+  draft:
+    if: startsWith(github.ref, 'refs/tags/')
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: installers-*
+          path: release-assets
+          merge-multiple: true
+      - name: Combine checksums
+        run: sed 's/\r$//' release-assets/SHA256SUMS-*.txt > release-assets/SHA256SUMS.txt
+      - name: Create draft with verified build artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" --draft --verify-tag --title "TrapClean $GITHUB_REF_NAME" --notes "Local storage analysis, reviewed cleanup, verified duplicates and optional Decisions providers. Download the DMG for your Mac or the Windows EXE. macOS builds are ad-hoc signed, not notarized; Windows builds are unsigned. See the README for installation and validation details." release-assets/*
